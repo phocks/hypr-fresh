@@ -8,7 +8,7 @@ const SubmitForm = (props: JSX.HTMLAttributes<HTMLInputElement>) => {
 
   const doSubmit = async (event: any) => {
     event.preventDefault();
-    // Do something here
+
     console.log(text);
     const data = await fetch("https://api.phocks.org/", {}).then((res) =>
       res.json()
@@ -18,7 +18,6 @@ const SubmitForm = (props: JSX.HTMLAttributes<HTMLInputElement>) => {
   };
 
   const doType = (event: any) => {
-    // event.preventDefault();
     console.log(event.target.value);
     setText(event.target.value);
   };

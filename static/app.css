@@ -1,6 +1,7 @@
 body {
   background: #f9f9f9;
   background-image: url("/grid.svg");
+  background-repeat: repeat;
 }
 
 .rainfall {
